@@ -1,0 +1,155 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+@import "import/gridlex";
+@import "_const";
+
+section.cover {
+  position: relative;
+  height: 100vh;
+  min-height: 450px;
+  background: $blue;
+  color: $white;
+  background: linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+  background: -webkit-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+  background: -moz-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+  background: -ms-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+  background-size: 800% 800%;
+
+  -webkit-animation: CoverAnimation 16s ease infinite;
+  -moz-animation: CoverAnimation 16s ease infinite;
+  animation: CoverAnimation 16s ease infinite;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: $white;
+  }
+  h1 {
+    font-size: 9em;
+    margin: .1em;
+    color: $blue-transparent;
+  }
+  h2 {
+    font-size: 4em;
+    margin: .1em;
+    text-transform: capitalize;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    width: 80px;
+  }
+  .home-navigation {
+    position: absolute;
+    bottom: 0;
+    transition: all 1s ease;
+    &.fixed {
+      position: fixed;
+      background: linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+      background: -webkit-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+      background: -moz-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+      background: -ms-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
+      background-size: 800% 800%;
+      top: 0;
+      -webkit-animation: CoverAnimation 16s ease infinite;
+      -moz-animation: CoverAnimation 16s ease infinite;
+      animation: CoverAnimation 16s ease infinite;
+      width: 100%;
+      bottom: inherit;
+      padding: 0;
+    }
+  }
+}
+section.home {
+  .home-title {
+    text-align: center;
+    margin: 4em 0;
+    h2 {
+      font-size: 4em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+// navigations
+  }
+}
+ul.horizontal-list {
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    a.active {
+      font-weight: bold;
+    }
+  }
+}
+.home-navigation {
+  li {
+    margin-left: 2px;
+    &:after {
+      content: '/';
+      margin-left: 5px;
+    }
+    &:last-child:after {
+      content: '';
+    }
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+// animation
+  }
+}
+@-webkit-keyframes CoverAnimation {
+  0% {
+    background-position: 2% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 2% 0%;
+  }
+}
+@-moz-keyframes CoverAnimation {
+  0% {
+    background-position: 2% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 2% 0%;
+  }
+}
+@keyframes CoverAnimation {
+  0% {
+    background-position: 2% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 2% 0%;
+  }
+}
+
+@import "_helper";
+@import "_grid";
+@import "_skills";
+@import "_about";
+@import "_work";
+@import "_works";
+@import "_available";
+
+@import "_opensource";
+@import "_responsive";
