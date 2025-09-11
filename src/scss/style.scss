@@ -1,18 +1,31 @@
+@use "import/gridlex";
+@use "const";
+
+@use "helper";
+@use "grid";
+@use "skills";
+@use "about";
+@use "work";
+@use "works";
+@use "available";
+
+@use "opensource";
+@use "responsive";
+
 body,
 html {
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
-@import "import/gridlex";
-@import "_const";
+
 
 section.cover {
   position: relative;
   height: 100vh;
   min-height: 450px;
-  background: $blue;
-  color: $white;
+  background: const.$blue;
+  color: const.$white;
   background: linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
   background: -webkit-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
   background: -moz-linear-gradient(328deg, #23b9db, #1d5aab, #0d0551, #093671);
@@ -28,12 +41,12 @@ section.cover {
   align-items: center;
   justify-content: center;
   a {
-    color: $white;
+    color: const.$white;
   }
   h1 {
     font-size: 9em;
     margin: .1em;
-    color: $blue-transparent;
+    color: const.$blue-transparent;
   }
   h2 {
     font-size: 4em;
@@ -142,14 +155,3 @@ ul.horizontal-list {
     background-position: 2% 0%;
   }
 }
-
-@import "_helper";
-@import "_grid";
-@import "_skills";
-@import "_about";
-@import "_work";
-@import "_works";
-@import "_available";
-
-@import "_opensource";
-@import "_responsive";

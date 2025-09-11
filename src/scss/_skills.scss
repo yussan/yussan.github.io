@@ -1,5 +1,5 @@
 
-@import "_const";
+@use "const";
 
 .overflow-project-container {
   height: 800px;
@@ -10,7 +10,7 @@
     padding: 0 3.5em 3.5em;
 
     .skills-item-text {
-      color: $gray;
+      color: const.$gray;
       display: inline-block;
       width: 100%;
       margin-bottom: 1em;

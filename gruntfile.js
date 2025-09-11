@@ -25,7 +25,7 @@ module.exports = (grunt) => {
     sass: {
       dist: {
         options: {
-          style: "inline",
+          style: "compressed",
         },
         files: [
           {
@@ -112,7 +112,7 @@ module.exports = (grunt) => {
       },
       sass: {
         files: ["src/scss/**/*.scss"],
-        tasks: ["scss"],
+        tasks: ["sass"],
       },
       js: {
         files: ["src/js/**/*.js"],
