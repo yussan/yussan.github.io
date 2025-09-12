@@ -5,12 +5,19 @@
   .container {
     width: 100%;
   }
+  section.home {
+    .home-title {
+      h2 {
+        font-size: 2em !important;
+      }
+    }
+  }
   section.cover {
     h1 {
-      font-size: 4em;
+      font-size: 4em !important;
     }
     h2 {
-      font-size: 1em;
+      font-size: 1em !important;
     }
   }
   .skills {
@@ -23,12 +30,19 @@
   .container {
     width: 100%;
   }
+  section.home {
+    .home-title {
+      h2 {
+        font-size: 2em !important;
+      }
+    }
+  }
   section.cover {
     h1 {
-      font-size: 4em;
+      font-size: 4em  !important;
     }
     h2 {
-      font-size: 1em;
+      font-size: 1em !important;
     }
   }
   .skills {
@@ -41,6 +55,13 @@
   .container {
     width: 990px;
     margin: 0 auto;
+  }
+  section.home {
+    .home-title {
+      h2 {
+        font-size: 2em !important;
+      }
+    }
   }
   .skills {
     .skills-item {
