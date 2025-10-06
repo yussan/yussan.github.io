@@ -9,11 +9,18 @@ section.home.skills#work-experiences
             - 
               let works = [
                   {
-                      title: 'Finarya',
-                      desc: 'Senior Frontend Engineering Associate',
+                      title: 'PT. Fintek Karya Nusantara',
+                      desc: 'Senior Frontend Engineering Associate D1',
                       link: 'https://www.linkedin.com/company/linkaja/mycompany',
                       thumb: '/dist/images/works/finarya-large.jpg',
-                      time: "July 2020 - Present"
+                      time: "Feb 2022 - Present"
+                  },
+                   {
+                      title: 'PT. Fintek Karya Nusantara',
+                      desc: 'Senior Frontend Engineering Associate D2',
+                      link: 'https://www.linkedin.com/company/linkaja/mycompany',
+                      thumb: '/dist/images/works/finarya-large.jpg',
+                      time: "April 2020 - Feb 2022"
                   },
                   {
                       title: 'Code & Rock Software',
@@ -62,7 +69,8 @@ section.home.skills#work-experiences
             include ../atoms/cards
             .grid-3-center 
                 .col-12.align-center 
-                    h3 Work Experiences
+                    h3 My Work Experiences, Please 
+                        a(download href="/dist/files/CV - Yusuf Akhsan Hidayat - Oct 2025.pdf") Download MY CV Here
                 each n in works 
                     +card-works(n)
 
